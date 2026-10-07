@@ -104,8 +104,10 @@ cmp.addEventListener('click', (e) => {
 cmp.addEventListener('keydown', (e) => {
   if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('.ver')) { e.preventDefault(); alternar(e.target.closest('.row')) }
 })
-document.getElementById('nomention').innerHTML =
-  `<p><b>Termos que não aparecem em nenhuma página do plano do Flávio:</b> ${semMencaoFlavio.join(', ')}.</p>`
+document.getElementById('nomention').innerHTML = `
+  <h4>O que NÃO aparece em nenhuma página do plano do Flávio</h4>
+  ${semMencaoFlavio.map((g) => `<div class="grupo"><span class="gtit">${g.grupo}</span><div class="chips">${g.termos.map((t) => `<span class="chip">${t}</span>`).join('')}</div></div>`).join('')}
+  <p class="gnota">Termos buscados no texto completo do PDF; nenhum aparece. O plano tem um capítulo de meio ambiente (p. 57–59).</p>`
 
 // Fundo: plano fullscreen com shader de halftone duotone (vermelho sobre papel),
 // um "rosto" abstrato feito de blobs que reage ao mouse e ao scroll.

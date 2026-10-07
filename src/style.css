@@ -174,3 +174,14 @@ footer a{color:var(--pink);font-weight:900}
 .go-apoio{display:inline-block;background:var(--red);color:#fff;border:3px solid var(--navy);padding:12px 20px;font:900 1rem 'Archivo Black',sans-serif;text-transform:uppercase;text-decoration:none;box-shadow:5px 5px 0 var(--navy)}
 .go-apoio:hover{background:var(--navy)}
 .nota-apoio{margin-top:16px;font-size:.8rem;font-weight:600;opacity:.85}
+
+/* Lista de temas que não aparecem no plano do Flávio */
+#nomention{display:block;background:var(--paper);border:3px solid var(--navy);padding:18px 20px;margin-top:20px}
+#nomention h4{font-family:'Archivo Black';text-transform:uppercase;font-size:1rem;margin-bottom:12px}
+#nomention .grupo{margin-bottom:12px}
+.gtit{display:block;font:900 .75rem 'Archivo',sans-serif;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:var(--red);color:#fff;border:2px solid var(--navy);font:900 .8rem 'Archivo',sans-serif;padding:3px 9px}
+.gnota{font-size:.8rem;font-weight:600;margin-top:6px}
+
+footer .apoios{margin-top:8px}

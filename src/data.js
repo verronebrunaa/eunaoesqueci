@@ -113,15 +113,23 @@ export const comparativo = [
   { tema: 'Emendas parlamentares',
     f: { t: 'Dar mais transparência, controle e rastreabilidade às emendas, priorizando políticas do Plano Plurianual.', p: '69' },
     l: { t: 'Enfrentar o que chama de distorção: as emendas somaram R$ 50 bilhões no orçamento de 2026. Critica as emendas impositivas e o orçamento secreto.', p: '15–16' } },
+  { tema: 'Meio ambiente',
+    f: { t: 'Tem capítulo próprio: zerar o desmatamento ilegal até 2029, combater queimadas ilegais com satélite e inteligência artificial, mercado regulado de carbono, pagamento por serviços ambientais e bioeconomia. Propõe também eliminar sobreposições entre Ibama, Funai e ICMBio, exigir transparência das ONGs que recebem dinheiro do exterior e conceder a licença ambiental se o órgão não decidir no prazo. Não menciona mudança climática, emissões de gases nem o Acordo de Paris; só cita eventos climáticos extremos ao tratar de segurança hídrica.', p: '49–50, 52, 57–59' },
+    l: { t: 'Tem capítulo de sustentabilidade ambiental e climática: desmatamento líquido zero até 2030, Plano Clima, meta de reduzir entre 59% e 67% as emissões até 2035 (base 2005) e mercado regulado de carbono já criado em lei. O plano afirma que o desmatamento na Amazônia está na menor taxa da história.', p: '13, 69–70' } },
+  { tema: 'População LGBTQIA+',
+    f: { t: 'Nenhuma proposta voltada à população LGBTQIA+, e o termo não aparece em nenhuma página do plano. A única proposta relacionada é no esporte: a categoria feminina seria disputada por atletas do sexo feminino, com o argumento de que quem não nasceu do sexo feminino manteria vantagens físicas mesmo após tratamento hormonal.', p: '40–41' },
+    l: { t: 'Promete levar em conta orientação sexual e identidade de gênero no planejamento das políticas públicas, combater a discriminação LGBTQIAP+ no acesso ao trabalho e priorizar o combate à violência contra pessoas LGBTQIAP+.', p: '23, 26, 29, 75' } },
   { tema: 'Combate à corrupção',
     f: { t: 'Fortalecer a Lei das Estatais; recrutamento profissional para cargos de direção; blindar fundos de pensão de estatais da indicação política; transparência de gastos.', p: '69–70' },
     l: { t: 'Aprofundar o Plano de Integridade e Combate à Corrupção 2025–2027, com responsabilização de “corruptos e corruptores, inclusive os do andar de cima”; Portal da Transparência com dados abertos e IA.', p: '18' } },
 ]
 
-// Termos buscados no texto do plano do Flávio sem nenhuma ocorrência
-export const semMencaoFlavio = ['escala 6x1', 'imposto de renda', 'salário mínimo', 'Bolsa Família']
+export const semMencaoFlavio = [
+  { grupo: 'Trabalho e renda', termos: ['escala 6x1', 'imposto de renda', 'salário mínimo', 'Bolsa Família'] },
+  { grupo: 'Direitos da população LGBTQIA+', termos: ['LGBT', 'orientação sexual', 'identidade de gênero', 'homofobia'] },
+  { grupo: 'Clima (o plano tem capítulo de meio ambiente, mas não trata do clima)', termos: ['mudança climática', 'emissões de gases', 'Acordo de Paris'] },
+]
 
-// Patrimônio declarado ao TSE (valores nominais, em R$)
 export const patrimonio = [
   { ano: 2006, valor: 385000 },
   { ano: 2010, valor: 691000 },
