@@ -66,7 +66,7 @@ Tudo que é fato mora aqui, e **nada entra sem fonte**. Os principais blocos:
 - `midias` — áudios e mensagens do caso Master, **em ordem cronológica** (a posição no mosaico depende da ordem; veja “Mosaico”).
 - `comparativo` — um objeto por tema, com o trecho de cada plano e a **página do PDF**. `null` significa “não consta no plano” (conferido por busca no texto inteiro do PDF). A linha “Maioridade penal” tem ainda o bloco `dados` com números oficiais.
 - `patrimonio` e `detalhes` — valores declarados ao TSE e os bens de cada ano que as fontes detalham.
-- `PLANOS` e `semMencaoFlavio` — links dos PDFs e termos que não aparecem no plano do Flávio.
+- `PLANOS` e `semMencaoFlavio` — links dos PDFs e, agrupados por tema, os termos que **não aparecem** em nenhuma página do plano do Flávio (buscados no texto completo do PDF).
 
 **Selos de status** (`status` na linha do tempo):
 
@@ -122,21 +122,6 @@ Tudo que é fato mora aqui, e **nada entra sem fonte**. Os principais blocos:
 - **Capa do Caso Master:** montagem do **Intercept Brasil**, publicada com a reportagem “ÁUDIO: Flávio Bolsonaro negociou com Daniel Vorcaro R$ 134 milhões para bancar filme sobre Jair”. Usada com crédito e link para a reportagem. **A licença de uso não foi confirmada** (veja pendências).
 - **Vídeo:** player oficial do YouTube (modo `youtube-nocookie`) de vídeo do **UOL**. O vídeo não foi baixado nem copiado. A edição e o conteúdo são do UOL.
 - Os áudios são linkados à publicação original (Intercept Brasil), sem hospedagem própria.
-
----
-
-## Pendências antes de publicar
-
-- [ ] **Responsável pela propaganda.** O rodapé hoje diz apenas “Conteúdo de propaganda eleitoral. Informações com fonte pública; investigação não é condenação.” A legislação eleitoral exige identificar quem responde pela propaganda; incluir nome/CNPJ da campanha ou pessoa responsável. Confirmar as regras com a assessoria jurídica da campanha.
-- [ ] **Licença da capa.** Confirmar se o Intercept autoriza o reuso da montagem; se não, pedir autorização por e-mail ou trocar por arte própria. Se houver crédito individual do artista no artigo original, incluir na legenda.
-- [ ] **Fontes alinhadas politicamente.** Alguns itens se apoiam em veículos de campo político (Fundação Perseu Abramo, Revista Fórum, Brasil de Fato). Trocar por grande imprensa ou documento oficial onde for possível.
-- [ ] **Item da PF sobre o financiamento da casa no BRB** (`01/10/2026` na linha do tempo) vem de uma única reportagem (Revista Fórum). Confirmar em outra fonte.
-- [ ] **Decisão do STF (30/11/2021)** foi lida pelo Conjur; a página oficial do STF estava inacessível. Conferir o teor no portal do STF.
-- [ ] **Páginas do comparativo** “11, 48” (reforma tributária, plano do Lula) e “44–46” (moradia) são aproximadas; conferir no PDF.
-- [ ] **Bens de 2006, 2010, 2014 e 2016** não estão detalhados: as fontes só trazem o total. Preencher a partir das fichas do DivulgaCandContas (`detalhes` em `data.js`).
-- [ ] **Faltas em votações do Senado** (cerca de 52% em jan–jul/2026) ficaram **de fora**: o dado vem de um site partidário citando outro veículo. Só publicar se confirmado no painel de votações do Senado.
-- [ ] **Gasto total do mandato:** não foi encontrado um total confiável; só o gasto com Correios em 2025 (R$ 161.288,81). O total pode ser levantado em Senado Transparência (gastos de cota por ano).
-- [ ] Conferir **rodando no navegador normal** o player do UOL e os links externos.
 
 ---
 
