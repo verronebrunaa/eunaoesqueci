@@ -1,0 +1,22 @@
+{
+  "name": "eu-nao-esqueci",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  },
+  "author": "verronebrunaa (https://github.com/verronebrunaa)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/verronebrunaa/eunaoesqueci.git"
+  },
+  "homepage": "https://github.com/verronebrunaa/eunaoesqueci"
+}

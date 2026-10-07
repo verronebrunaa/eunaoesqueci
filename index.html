@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>#EuNãoEsqueci</title>
+  <meta name="description" content="Governo Bolsonaro, caso Master, patrimônio e histórico de Flávio Bolsonaro, com fontes. Quem não apoia corrupção não vota no Flávio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,900&family=Archivo+Black&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+  <header class="top">
+    <span class="tag">#euNÃOesqueci</span>
+    <nav><a href="#linha">Linha do tempo</a><a href="#patrimonio">Patrimônio</a><a href="#governo">Governo</a><a href="#historico">Legislativo</a><a href="#master">Caso Master</a><a href="#comparativo">Flávio × Lula</a><a href="#voto">Voto</a></nav>
+  </header>
+
+  <section class="hero">
+    <h1 class="poster" aria-label="Quem não apoia corrupção não vota no Flávio">
+      <span>QUEM</span><span class="sp">NÃO</span>
+      <span class="wide">APOIA</span>
+      <span class="red">CORRUPÇÃO,</span>
+      <span>NÃO</span><span class="sp">VOTA</span>
+      <span class="wide">NO FLÁVIO.</span>
+    </h1>
+    <p class="hashtag">#eu<b>não</b>esqueci</p>
+  </section>
+
+  <main>
+    <section id="linha" class="block">
+      <div class="intro">
+        <h2>2003 até hoje: <em>a linha do tempo</em></h2>
+        <p class="lead">Cada marco tem fonte e um selo que diz o que ele é: fato documentado, alegação do Ministério Público, apuração em andamento ou decisão anulada. Investigação e denúncia não são condenação, e a página diz isso em cada item.</p>
+        <div class="legend" id="legend"></div>
+      </div>
+      <ol class="tl" id="timeline"></ol>
+    </section>
+
+    <section id="patrimonio" class="block dark">
+      <h2>Patrimônio de <em>Flávio Bolsonaro</em> declarado ao TSE</h2>
+      <p class="lead">Cada barra é o patrimônio que o próprio Flávio declarou em uma eleição (valores nominais, sem correção pela inflação).</p>
+      <p class="chart-title">Flávio Bolsonaro · patrimônio declarado por eleição</p>
+      <p class="hint">Clique numa barra para ver os bens daquele ano.</p>
+      <div class="patgrid">
+        <div class="chartbox" id="bars"></div>
+        <div class="detail" id="detalhe" aria-live="polite"></div>
+      </div>
+      <ul class="facts light">
+        <li><b>R$ 1,74 mi (2018) → R$ 8,186 mi (2026).</b> A casa do Lago Sul (R$ 6,2 mi) explica a maior parte. Ele diz que pagou a entrada vendendo um apartamento (R$ 917 mil) e uma franquia (R$ 50 mil), bens que constavam em 2018 e não aparecem em 2026.</li>
+        <li><b>Para comparar:</b> Lula declarou R$ 4,8 mi ao TSE em 2026. Flávio declarou quase o dobro.</li>
+        <li><b>Outros bens declarados:</b> fundo multimercado de R$ 1,09 mi, R$ 568,7 mil em contas, um carro de 2014 (R$ 133 mil).</li>
+        <li><b>Gasto da cota:</b> em 2025, foi o senador que mais gastou com Correios: R$ 161.288,81.</li>
+      </ul>
+      <p class="src">Confira você mesmo: <a href="https://divulgacandcontas.tse.jus.br/" target="_blank" rel="noopener">DivulgaCandContas (TSE)</a> ·
+        <a href="https://www.poder360.com.br/poder-eleicoes-2026/flavio-declara-r-81-milhoes-em-patrimonio-quase-o-dobro-de-lula/" target="_blank" rel="noopener">Poder360</a> ·
+        <a href="https://www.metropoles.com/brasil/mansao-de-r-62-milhoes-no-lago-sul-fez-patrimonio-de-flavio-disparar" target="_blank" rel="noopener">Metrópoles</a> ·
+        <a href="https://www.poder360.com.br/poder-congresso/senadores-gastaram-r-28-mi-com-correios-em-2025-flavio-lidera/" target="_blank" rel="noopener">Poder360 (Correios)</a>
+      </p>
+    </section>
+
+    <section id="governo" class="block">
+      <h2>O que a gente <em>não esqueceu</em></h2>
+      <p class="lead">Flávio diz que seu plano é continuação do governo Bolsonaro (2019–2022). Então vale lembrar o que foi esse governo.</p>
+      <div class="cards">
+        <article class="card">
+          <b class="big">716 mil</b>
+          <p>mortes por Covid-19 registradas no Brasil até set/2025 (total do país, não só do período Bolsonaro).</p>
+          <a href="https://www.cartacapital.com.br/?p=234329" target="_blank" rel="noopener">fonte ↗</a>
+        </article>
+        <article class="card">
+          <b class="big">CPI da Covid</b>
+          <p>33 depoimentos, mais de 1.100 requerimentos, 14 pessoas passaram a ser investigadas, com indícios em compras de vacinas.</p>
+          <a href="https://vermelho.org.br/?p=599178" target="_blank" rel="noopener">fonte ↗</a>
+        </article>
+        <article class="card">
+          <b class="big">Butantan ignorado</b>
+          <p>A oferta de 60 milhões de doses feita pelo Butantan em julho de 2020 não foi respondida pelo Ministério da Saúde.</p>
+          <a href="https://pt.org.br/?p=290572" target="_blank" rel="noopener">fonte ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="master" class="block dark">
+      <figure class="capa">
+        <img src="/img/capa-master-intercept.jpg" width="1920" height="1152" loading="lazy"
+             alt="Montagem do Intercept Brasil sobre Flávio Bolsonaro e Daniel Vorcaro, com cédulas de R$ 200, tira de filme e um cavalo" />
+        <figcaption>Montagem: <a href="https://www.intercept.com.br/2026/05/13/audio-flavio-negociou-vorcaro-milhoes/" target="_blank" rel="noopener">Intercept Brasil ↗</a>, publicada com a reportagem “ÁUDIO: Flávio Bolsonaro negociou com Daniel Vorcaro R$ 134 milhões para bancar filme sobre Jair”.</figcaption>
+      </figure>
+      <h2>Caso Master: <em>o rastro do dinheiro</em></h2>
+      <p class="lead">A PF investiga se Flávio pediu e intermediou repasses de Daniel Vorcaro, dono do Banco Master, para financiar o filme <i class="dh">Dark Horse</i>, sobre Jair Bolsonaro.</p>
+      <ol class="timeline">
+        <li><time>22/07/2026</time><span>O ministro André Mendonça (STF) autoriza a investigação, a pedido da PF e com parecer favorável da PGR. Inquérito ligado ao inquérito 5026 do caso Master.</span></li>
+        <li><time>Set/2026</time><span>Documentos tornados públicos mostram negociação de uma contribuição de US$ 24 milhões. Segundo a investigação, cerca de US$ 14 milhões teriam sido pagos.</span></li>
+        <li><time>Crimes sob apuração</time><span>Corrupção, lavagem de dinheiro e evasão de divisas. É suspeita, não condenação.</span></li>
+        <li><time>O que Flávio diz</time><span>Que foi financiamento privado, que não ofereceu contrapartida e que a produtora responde pela gestão. O Aos Fatos mapeou ao menos 43 declarações enganosas dele sobre o caso.</span></li>
+      </ol>
+      <h3 class="sub">Áudios e mensagens, direto da fonte</h3>
+      <div class="media" id="media"></div>
+      <p class="src">Fontes:
+        <a href="https://www.cnnbrasil.com.br/politica/corrupcao-lavagem-e-evasao-suspeitas-sobre-flavio-na-relacao-com-vorcaro/" target="_blank" rel="noopener">CNN Brasil</a> ·
+        <a href="https://fpabramo.org.br/caso-master-rastro-do-dinheiro-chega-ao-senador-flavio-bolsonaro-e-amplia-crise-em-ano-eleitoral/" target="_blank" rel="noopener">Fundação Perseu Abramo</a> ·
+        <a href="https://brasildefato.com.br/2026/10/03/flavio-bolsonaro-chega-ao-primeiro-turno-investigado-pela-pf-com-relacoes-com-vorcaro-expostas-e-vice-suspeito-de-estupro" target="_blank" rel="noopener">Brasil de Fato</a>
+      </p>
+    </section>
+
+    <section id="historico" class="block">
+      <h2>Mais de 20 anos de mandato. <em>O que ficou?</em></h2>
+      <p class="lead">Flávio está na política desde 2003: quatro mandatos na Alerj (2003–2018) e Senador desde 2019, eleito com 4,38 milhões de votos. Hoje preside a Comissão de Segurança Pública do Senado. Veja o saldo legislativo dele no Senado.</p>
+      <div class="cards">
+        <article class="card">
+          <b class="big">1 lei</b>
+          <p>Em mais de sete anos de Senado, só um projeto virou lei: o do microcrédito (Lei 15.364/2026, sancionada com vetos). Pelo registro oficial, o projeto é de autoria do senador Esperidião Amin; Flávio é um dos signatários.</p>
+          <a href="https://www25.senado.leg.br/web/atividade/materias/-/materia/158350" target="_blank" rel="noopener">Senado ↗</a>
+        </article>
+        <article class="card">
+          <b class="big">57+ projetos</b>
+          <p>Folhapress contou 57 projetos de lei e 92 PECs apresentados, a maioria sobre segurança. Nenhum projeto de segurança dele virou lei. O gabinete diz que são 62 como autor principal, mais de 100 como coautor.</p>
+          <a href="https://jornaldebrasilia.com.br/noticias/politica-e-poder/flavio-bolsonaro-mirou-seguranca-mas-nao-teve-projetos-proprios-transformados-em-lei/" target="_blank" rel="noopener">Jornal de Brasília ↗</a>
+        </article>
+        <article class="card">
+          <b class="big">3 no limbo</b>
+          <p>Três projetos passaram no plenário do Senado e seguem parados na Câmara: baterias de carros elétricos, redes de rádio e uma entidade do Rio entre beneficiárias de loteria.</p>
+          <a href="https://www.brasildefato.com.br/2026/04/02/em-sete-anos-flavio-bolsonaro-teve-apenas-um-projeto-de-lei-aprovado-no-congresso/" target="_blank" rel="noopener">Brasil de Fato ↗</a>
+        </article>
+      </div>
+      <ul class="facts">
+        <li><b>Segurança era a bandeira.</b> Defendeu pena de morte e redução da maioridade penal desde a Alerj. Como relator, aprovou em 2024 a lei que acabou com a saída temporária de presos (a “saidinha”).</li>
+        <li><b>Reforma tributária.</b> Votou contra a regulamentação (PLP 108/24), dizendo que aumentaria a carga. O plano de governo dele propõe revisar a reforma e reduzir o IVA.</li>
+        <li><b>Rachadinhas na Alerj e a loja de chocolates.</b> O MP-RJ denunciou Flávio em 2020, e a loja Kopenhagen estava entre os alvos da suspeita de lavagem. Em 2021, o STJ (foro) e o STF (relatórios do Coaf) anularam decisões e provas, e a denúncia foi arquivada em 2022. Nenhum tribunal julgou se ele é culpado ou inocente. Não há condenação.</li>
+      </ul>
+      <p class="src">Fontes:
+        <a href="https://ndmais.com.br/politica/flavio-bolsonaro-trajetoria/" target="_blank" rel="noopener">ND Mais</a> ·
+        <a href="https://exame.com/brasil/de-inicio-aos-21-anos-ao-senado-a-trajetoria-politica-de-flavio-bolsonaro-ate-o-anuncio-de-2026/" target="_blank" rel="noopener">Exame</a> ·
+        <a href="https://jornaldebrasilia.com.br/noticias/politica-e-poder/flavio-votou-contra-reforma-tributaria-mas-promete-enviar-ao-congresso-uma-nova-regulamentacao/" target="_blank" rel="noopener">Jornal de Brasília (reforma)</a> ·
+        <a href="https://www.cnnbrasil.com.br/politica/stj-anula-decisoes-contra-flavio-bolsonaro-no-caso-das-rachadinhas/" target="_blank" rel="noopener">CNN Brasil (STJ)</a>
+      </p>
+    </section>
+
+    <section id="comparativo" class="block">
+      <h2>Lado a lado: <em>Flávio × Lula</em></h2>
+      <div class="pdfs" id="pdfs"></div>
+      <div class="cmp" id="cmp"></div>
+      <div class="facts light" id="nomention"></div>
+    </section>
+
+    <section id="voto" class="block cta">
+      <h2>Quem não apoia corrupção<br /><em>não vota no Flávio.</em></h2>
+      <p class="lead">Compartilhe com uma pessoa indecisa. Mande a fonte, não o grito.</p>
+      <button id="share">Compartilhar</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Conteúdo de propaganda eleitoral. Informações com fonte pública; investigação não é condenação.</p>
+    <p class="autor">Site criado por <a href="https://github.com/verronebrunaa" target="_blank" rel="noopener">@verronebrunaa</a> · <a href="https://github.com/verronebrunaa/eunaoesqueci" target="_blank" rel="noopener">código no GitHub</a></p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
