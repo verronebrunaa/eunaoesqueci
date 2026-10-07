@@ -106,7 +106,7 @@ cmp.addEventListener('keydown', (e) => {
 })
 document.getElementById('nomention').innerHTML = `
   <h4>O que NÃO aparece em nenhuma página do plano do Flávio</h4>
-  ${semMencaoFlavio.map((g) => `<div class="grupo"><span class="gtit">${g.grupo}</span><div class="chips">${g.termos.map((t) => `<span class="chip">${t}</span>`).join('')}</div></div>`).join('')}
+  ${semMencaoFlavio.map((g) => `<div class="grupo"><span class="gtit">${g.grupo}</span><div class="chips">${g.termos.map((t) => `<span class="chip">${t}</span>`).join('')}</div>${g.nota ? `<p class="gn">${g.nota}</p>` : ''}</div>`).join('')}
   <p class="gnota">Termos buscados no texto completo do PDF; nenhum aparece. O plano tem um capítulo de meio ambiente (p. 57–59).</p>`
 
 // Fundo: plano fullscreen com shader de halftone duotone (vermelho sobre papel),

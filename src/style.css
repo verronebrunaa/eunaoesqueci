@@ -79,11 +79,13 @@ section[id]{scroll-margin-top:64px}
 .badge.alegacao{background:var(--red);color:#fff}
 .badge.apuracao{background:#f4c542}
 .badge.anulado{background:var(--paper);border-style:dashed}
-.tl{list-style:none;padding:0;border-left:4px solid var(--navy)}
-.tl li{position:relative;padding:0 0 24px 24px;max-width:75ch}
+.tl{list-style:none;padding:0;border-left:4px solid var(--navy);display:grid;grid-auto-rows:auto}
+/* Cards da linha do tempo com a mesma altura só em tela larga; no celular cada um tem a altura do seu texto */
+@media (min-width:901px){.tl{grid-auto-rows:1fr}}
+.tl li{position:relative;padding:0 0 24px 24px;max-width:92ch;display:flex;flex-direction:column}
 .tl li::before{content:'';position:absolute;left:-11px;top:6px;width:18px;height:18px;background:var(--red);border:3px solid var(--navy);border-radius:50%}
 .tl time{font-family:'Archivo Black';color:var(--navy);font-size:1.3rem}
-.tl .box{background:rgba(246,233,230,.95);border:3px solid var(--navy);padding:12px 16px;margin-top:4px}
+.tl .box{background:rgba(246,233,230,.95);border:3px solid var(--navy);padding:12px 16px;margin-top:4px;flex:1}
 .tl h3{font-family:'Archivo Black';text-transform:uppercase;font-size:1.05rem;margin:6px 0}
 .tl .box p a{color:var(--navy);font-weight:900;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px;background:rgba(232,50,60,.14);padding:0 3px}
 .tl .box p a:hover{background:var(--red);color:#fff}
@@ -176,7 +178,7 @@ footer a{color:var(--pink);font-weight:900}
 .nota-apoio{margin-top:16px;font-size:.8rem;font-weight:600;opacity:.85}
 
 /* Lista de temas que não aparecem no plano do Flávio */
-#nomention{display:block;background:var(--paper);border:3px solid var(--navy);padding:18px 20px;margin-top:20px}
+#nomention{display:block;max-width:none;background:var(--paper);border:3px solid var(--navy);padding:18px 20px;margin-top:20px}
 #nomention h4{font-family:'Archivo Black';text-transform:uppercase;font-size:1rem;margin-bottom:12px}
 #nomention .grupo{margin-bottom:12px}
 .gtit{display:block;font:900 .75rem 'Archivo',sans-serif;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
@@ -185,3 +187,27 @@ footer a{color:var(--pink);font-weight:900}
 .gnota{font-size:.8rem;font-weight:600;margin-top:6px}
 
 footer .apoios{margin-top:8px}
+
+.gn{font-size:.8rem;font-weight:700;margin-top:8px;padding-left:10px;border-left:4px solid var(--red)}
+
+/* Celular: patrimônio (gráfico e painel) encolhem em vez de empurrar a página para o lado */
+.patgrid>*{min-width:0}
+@media (max-width:900px){.patgrid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:600px){
+  .chartbox{padding:14px 8px 10px}
+  .bars{gap:5px;height:300px}
+  .val{font-size:.6rem;white-space:normal;line-height:1.1;margin-bottom:4px}
+  .yr{font-size:.72rem}
+  .bens li{flex-wrap:wrap;gap:2px 12px}
+  .detail{padding:14px}
+  .detail h3{font-size:1.35rem}
+}
+
+/* Celular estreito: título do topo cabe na tela (ex.: 320 px) */
+@media (max-width:360px){.poster{font-size:clamp(2rem,8.6vw,2.6rem)}}
+
+/* Redes sociais no rodapé */
+footer .redes{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 12px;margin-top:14px}
+footer .redes a{display:inline-flex;align-items:center;gap:8px;color:var(--paper);border:2px solid var(--pink);padding:8px 12px;font-size:.8rem;font-weight:900;text-decoration:none;min-height:40px}
+footer .redes a:hover,footer .redes a:focus-visible{background:var(--pink);color:var(--navy)}
+footer .redes svg{flex:none}

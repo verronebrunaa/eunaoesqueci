@@ -18,11 +18,11 @@ Site criado por **[@verronebrunaa](https://github.com/verronebrunaa)**. Código 
 
 | Âncora | O que mostra |
 |---|---|
-| `#linha` | Linha do tempo de 2003 a 2026, com selo em cada marco (fato documentado, alegação do MP, em apuração, anulado pela Justiça) e links dentro das frases |
-| `#patrimonio` | Gráfico de barras 2D do patrimônio declarado ao TSE; clicar numa barra abre os bens daquele ano ao lado |
 | `#governo` | O governo Bolsonaro (2019–2022): Covid, CPI, vacinas |
-| `#master` | Caso Master: capa, linha do tempo da investigação e mosaico cronológico de áudios e mensagens |
+| `#patrimonio` | Gráfico de barras 2D do patrimônio declarado ao TSE; clicar numa barra abre os bens daquele ano ao lado |
 | `#historico` | Histórico legislativo no Senado (projetos apresentados, aprovados, votações) |
+| `#linha` | Linha do tempo de 2003 a 2026, com selo em cada marco (fato documentado, alegação do MP, em apuração, anulado pela Justiça) e links dentro das frases |
+| `#master` | Caso Master: capa, linha do tempo da investigação e mosaico cronológico de áudios e mensagens |
 | `#comparativo` | Plano do Flávio × plano do Lula, tema a tema, com a página do PDF de cada trecho |
 | `#voto` | Fechamento e botão de compartilhar |
 
@@ -85,7 +85,7 @@ Tudo que é fato mora aqui, e **nada entra sem fonte**. Os principais blocos:
 
 1. **Nada sem fonte.** Cada fato linka a publicação original. Preferir grande imprensa, documentos oficiais e decisões judiciais.
 2. **Dizer o que cada coisa é.** Investigação, denúncia e alegação **não são condenação**. Use “o MP afirma”, “segundo a PF”, “em apuração”. Nunca “ele lavou dinheiro” como fato.
-3. **Anulação não é absolvição.** O caso das rachadinhas foi anulado por forma (foro e provas) e arquivado em 2022, sem julgamento de mérito. O site diz isso.
+3. **Anulação não é absolvição.** O caso das rachadinhas foi anulado por forma (foro e provas) e a denúncia foi arquivada em 16/05/2022 a pedido do MP, sem julgamento de mérito. O site diz isso.
 4. **Mostrar a versão da outra parte.** Onde existe, a defesa de Flávio aparece (ex.: “financiamento privado, sem contrapartida”).
 5. **Divergência entre fontes aparece como divergência** (ex.: venda × devolução da franquia Kopenhagen; US$ 10,6 mi × US$ 24 mi no caso Master). Não somar nem escolher em silêncio.
 6. **Resultados que o plano de governo atribui a si mesmo** (ex.: “15 milhões de cirurgias”) são afirmações do próprio documento, e a página avisa isso.
