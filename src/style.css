@@ -165,3 +165,12 @@ footer{background:var(--navy);color:var(--paper);padding:24px 20px;font-size:.8r
 
 footer .autor{margin-top:8px}
 footer a{color:var(--pink);font-weight:900}
+
+/* Site de apoio (Dá pra Virar): painel liso, sem contorno no vermelho */
+.apoio{background:var(--paper);border:3px solid var(--navy);padding:26px 28px;max-width:780px;margin:0 auto}
+.apoio h2{margin-top:10px}
+.apoio h2 em{-webkit-text-stroke:0}
+.apoio .lead{margin:14px 0 18px}
+.go-apoio{display:inline-block;background:var(--red);color:#fff;border:3px solid var(--navy);padding:12px 20px;font:900 1rem 'Archivo Black',sans-serif;text-transform:uppercase;text-decoration:none;box-shadow:5px 5px 0 var(--navy)}
+.go-apoio:hover{background:var(--navy)}
+.nota-apoio{margin-top:16px;font-size:.8rem;font-weight:600;opacity:.85}
