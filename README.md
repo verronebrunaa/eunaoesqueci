@@ -10,7 +10,7 @@ Estética inspirada no cartaz “EU NÃO SOU COVEIRO, TÁ CERTO? #eunãoesqueci�
 
 ## Autoria
 
-Site criado por **[@verronebrunaa](https://github.com/verronebrunaa)**. Código em [github.com/verronebrunaa/eunaoesqueci](https://github.com/verronebrunaa/eunaoesqueci).
+Site criado por **[@verronebrunaa](https://github.com/verronebrunaa)**.
 
 ---
 
